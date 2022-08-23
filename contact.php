@@ -1,28 +1,28 @@
 <?php 
 
-    if(isset($_POST['btn-submit']))
+    if(isset($_POST['submit']))
     {
-       $UserName = $_POST['UName'];
-       $Email = $_POST['Email'];
-       $Subject = $_POST['Subject'];
-       $Msg = $_POST['msg'];
+       $UserName = $_POST['name'];
+       $Email = $_POST['mail'];
+       $Subject = $_POST['subject'];
+       $Msg = $_POST['message'];
 
-       if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
+       if(empty($name) || empty($email) || empty($subject) || empty($message))
        {
            header('location:index.php?error');
        }
        else
        {
-           $to = "admin@onlineittuts.com";
+           $to = "aksharvirani227@gmmail.com";
 
-           if(mail($to,$Subject,$Msg,$Email))
+           if(mail($to,$subject,$message,$email))
            {
-               header("location:index.php?success");
+               header("location:index.html?success");
            }
        }
     }
     else
     {
-        header("location:index.php");
+        header("location:index.html");
     }
 ?>
