@@ -2,10 +2,10 @@
 
     if(isset($_POST['submit']))
     {
-       $UserName = $_POST['name'];
-       $Email = $_POST['mail'];
-       $Subject = $_POST['subject'];
-       $Msg = $_POST['message'];
+       $name = $_POST['name'];
+       $email = $_POST['mail'];
+       $subject = $_POST['subject'];
+       $message = $_POST['message'];
 
        if(empty($name) || empty($email) || empty($subject) || empty($message))
        {
