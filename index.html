@@ -514,7 +514,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:Jihsuyaatech@gmail.com">Jihsuyaatech@gmail.com</a></p>
+              <p><a href="mailto:aksharvirani227@gmail.com">aksharvirani227@gmail.com</a></p>
             </div>
           </div>
 
@@ -524,33 +524,26 @@
       <div id="google-map" data-latitude="20.372" data-longitude="72.917"></div>
 
       <div class="container">
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
+        <div class="row">
+            <div class="col-lg-6 m-auto">
+                <div class="card mt-5">
+                    <div class="card-title">
+                        <h2 class="text-center py-2"> Contact Us </h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="contact.php" method="post">
+                            <input type="text" name="name" placeholder="User Name" class="form-control mb-2">
+                            <input type="email" name="email" placeholder="Email" class="form-control mb-2">
+                            <input type="text" name="subject" placeholder="Subject" class="form-control mb-2">
+                            <textarea name="message" class="form-control mb-2" placeholder="Write The Message"></textarea>
+                            <button class="btn btn-success" name="submit"> Send Message </button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
         </div>
+    </div>
 
-      </div>
     </section><!-- #contact -->
 
   </main>
