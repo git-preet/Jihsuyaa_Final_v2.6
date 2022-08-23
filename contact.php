@@ -9,7 +9,7 @@
 
        if(empty($name) || empty($email) || empty($subject) || empty($message))
        {
-           header('location:index.php?error');
+           header('location:index.html?error');
        }
        else
        {
