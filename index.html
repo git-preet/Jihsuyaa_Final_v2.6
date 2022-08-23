@@ -534,22 +534,6 @@
                 <div class="card mt-5">
                     <div class="card-title">
                         <h2 class="text-center py-2"> Contact Us </h2>
-                        <hr>
-                        <?php 
-                            $Msg = "";
-                            if(isset($_GET['error']))
-                            {
-                                $Msg = " Please Fill in the Blanks ";
-                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
-                            }
-
-                            if(isset($_GET['success']))
-                            {
-                                $Msg = " Your Message Has Been Sent ";
-                                echo '<div class="alert alert-success">'.$Msg.'</div>';
-                            }
-                        
-                        ?>
                     </div>
                     <div class="card-body">
                         <form action="process.php" method="post">
