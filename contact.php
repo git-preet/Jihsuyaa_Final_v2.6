@@ -1,6 +1,6 @@
 <?php 
 
-    if(isset($_POST['btn-send']))
+    if(isset($_POST['btn-submit']))
     {
        $UserName = $_POST['UName'];
        $Email = $_POST['Email'];
